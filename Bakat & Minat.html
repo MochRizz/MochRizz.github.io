@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .education {
+            width: 80%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding-top: 80px; /* Memberikan jarak agar konten tidak nabrak navbar */  /* Warna latar belakang kotak */
+            text-align: center; /* Agar konten dalam kotak lebih terpusat */
+        }
+
+        .education-intro h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #ffffff; /* Warna teks untuk judul utama */
+        }
+
+        .education-intro h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #007bff;  /* Warna teks untuk subjudul */
+        }
+
+        .education-intro p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ededed;
+            text-align: justify;
+        }
+
+        /* Kotak-kotak riwayat pendidikan */
+        .education-boxes {
+            display: flex;
+            justify-content: center; /* Memastikan kotak-kotak berada di tengah */
+            gap: 20px;
+            flex-wrap: wrap;  /* Agar konten tetap rapi pada layar kecil */
+        }
+
+        .education-item {
+            background-color: #2c3e50;  /* Warna latar belakang kotak */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 45%; /* Kotak akan memiliki lebar 45% untuk dua kotak berdampingan */
+            box-sizing: border-box;
+            transition: transform 0.3s; /* Efek saat hover */
+            margin-top: 20px; /* Memberikan jarak antar kotak */
+        }
+
+        .education-item:hover {
+            transform: translateY(-5px);  /* Efek hover untuk kotak */
+        }
+
+        .education-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .education-item p {
+            font-size: 16px;
+            color: #ededed;
+            line-height: 1.5;
+        }
+
+        /* Responsif: kotak akan berurutan secara vertikal pada layar kecil */
+        @media (max-width: 768px) {
+            .education-item {
+                width: 100%;  /* Kotak mengambil lebar penuh pada perangkat kecil */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Rizqi.</a>
+
+        <nav class="navbar">
+            <a href="website.html">Home</a>
+            <a href="Biodata.html">Biodata</a>
+            <a href="Siapakah Saya.html">Siapakah Saya</a>
+            <a href="Pendidikan.html">Pendidikan</a>
+            <a href="Organisasi.html">Organisasi</a>
+            <a href="Kontak.html">Kontak</a>
+            <a href="Portofolio.html">Portofolio</a>
+        </nav>
+    </header>
+
+    <section class="education">
+        <div class="education-intro">
+            <h1 align="center">Bakat & Minat</h1>
+            <h3 align="center"></h3>
+            <p>Selain pendidikan dan organisasi, saya juga memiliki beberapa bakat dan minat yang sangat penting bagi pengembangan diri saya. Berikut adalah beberapa bakat dan minat saya yang telah saya kembangkan dan terus pelajari.</p>
+        </div>
+
+        <!-- Tiga kotak pendidikan yang berjejer ke samping -->
+        <div class="education-boxes">
+            <div class="education-item">
+                <h3>Bakat</h3>
+                <p><strong>Bidang Olahraga</strong></p>
+                <p align="justify">Saya memiliki bakat alami dalam olahraga, khususnya dalam Sepak bola & Badminton. Sejak kecil, saya selalu cepat belajar teknik dasar dan beradaptasi dengan permainan. Dengan stamina dan ketahanan fisik yang baik, saya dapat berkontribusi dengan efektif dalam tim.</p>
+            </div>
+            <div class="education-item">
+                <h3>Minat</h3>
+                <p><strong>Bidang Teknologi</strong></p>
+                <p align="justify">Saya memiliki minat yang besar terhadap teknologi, terutama dalam hal Teknologi Komputer dan Pengmbangan perangkat lunak. Ketertarikan saya terhadap dunia teknologi membuat saya selalu ingin belajar lebih banyak tentang inovasi terbaru, mulai dari pemrograman komputer hingga kecerdasan buatan (AI).</p>
+            </div>
+        </div>
+    </section>
+        <div class="home-sci">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+
+        </div>
+    </section>
+</body>
+</html>

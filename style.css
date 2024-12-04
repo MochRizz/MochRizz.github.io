@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #00abf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+} 
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px; /* Diperbaiki */
+    height: 50px;
+}
+
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a::nth-child(1){
+    background: transparent;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover:before{
+    width: 100%;
+
+}
+
+.biodata {
+    height: 100vh; /* Agar mengambil seluruh tinggi layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #081b29; /* Warna latar belakang bisa disesuaikan */
+}
+
+.biodata-content {
+    text-align: left; /* Teks di kiri */
+    background: #2c3e50;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.biodata-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center; /* Hanya judul yang berada di tengah */
+    margin-bottom: 20px;
+}
+
+.biodata-content hr {
+    margin-bottom: 20px;
+    border: 1px solid #00abf0; /* Warna garis horizontal */
+}
+
+table {
+    width: 100%;
+    max-width: 600px; /* Menyusun tabel tidak lebih lebar dari 600px */
+    margin: 0 auto; /* Tabel tetap berada di tengah tapi kontennya tetap kiri */
+    border-collapse: collapse;
+    color: #fff;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid #00abf0; /* Garis tabel */
+}
+
+table td img {
+    border-radius: 8px;
+}
+
+table a {
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.biodata-content, 
+.biodata-content table, 
+.biodata-content td, 
+.biodata-content img, 
+.biodata-content hr {
+    border: none; /* Menghilangkan semua border pada elemen-elemen ini */
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse; /* Menghapus jarak antara sel tabel */
+}
+
+table td {
+    padding: 10px;
+}
+
+table td img {
+    border: none; /* Menghilangkan border pada gambar */
+}
+
+.biodata-content hr {
+    margin-bottom: 20px;
+    border: none; /* Menghilangkan border pada garis horizontal */
+}
+
+.biodata-content h1 {
+    text-align: center; /* Judul tetap di tengah */
+    margin-bottom: 20px;
+}
+
+.biodata-content h1 {
+    text-align: center; /* Judul tetap di tengah */
+    margin-bottom: 10px; /* Mengurangi jarak antara judul dan garis horizontal */
+}
+
+.biodata-content hr {
+    margin: 10px 0; /* Mengurangi jarak atas dan bawah pada garis horizontal */
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px; /* Mengurangi padding antara sel tabel */
+}
+
+table td img {
+    border: none; /* Menghilangkan border pada gambar */
+}
+
+table td:first-child {
+    padding-top: 5px; /* Mengurangi jarak pada kolom pertama (Nama, Kelas, Absen, dll.) */
+}
+
+table td:last-child {
+    padding-bottom: 5px; /* Mengurangi jarak pada kolom terakhir (gambar) */
+}
+
+/* Reset beberapa style default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk header */
+.header {
+    background-color: #00abf0;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Styling untuk bagian Riwayat Pendidikan */
+/* Reset beberapa style default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk header */
+.header {
+    background-color: #00abf0;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Tambahkan padding-top untuk memberi jarak dari navbar */
+.education {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding-top: 80px; /* Memberikan jarak agar konten tidak nabrak navbar */
+}
+
+.education-intro h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.education-intro h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.education-intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ededed;
+    text-align: justify;
+}
+
+/* Kotak-kotak riwayat pendidikan */
+.education-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;  /* Agar konten tetap rapi pada layar kecil */
+}
+
+.education-item {
+    background-color: #2c3e50;  /* Background abu-abu untuk kotak */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s; /* Efek saat hover */
+    align-items: center;
+    align-content: center;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);  /* Efek hover untuk kotak */
+}
+
+.education-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #ededed;
+    line-height: 1.5;
+}
+
+/* Responsif: kotak akan berurutan secara vertikal pada layar kecil */
+@media (max-width: 768px) {
+    .education-item {
+        width: 100%;  /* Kotak mengambil lebar penuh pada perangkat kecil */
+    }
+}
+
